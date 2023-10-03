@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net7.0": {
-      "Dapper/2.0.151": {
+      "Dapper/2.1.4": {
         "type": "package",
         "compile": {
           "lib/net5.0/Dapper.dll": {
@@ -163,22 +163,23 @@
     }
   },
   "libraries": {
-    "Dapper/2.0.151": {
-      "sha512": "mMcZgx1lim0/i1Ozu+lgnBM4GwNIHpCuxV6BV2ovsEfZAXRAq4jb6RIhxGDcVjtmXMLPpdp85jHPdDjBMMwejw==",
+    "Dapper/2.1.4": {
+      "sha512": "TnTa28ktP/drRXnnXChHANq2WoF8af9DLu3VBtyPn3RYjxwDzuYhGrSvAN2CrmE+RyNaN1v81kf6rYbp0a4UaQ==",
       "type": "package",
-      "path": "dapper/2.0.151",
+      "path": "dapper/2.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Dapper.png",
-        "dapper.2.0.151.nupkg.sha512",
+        "dapper.2.1.4.nupkg.sha512",
         "dapper.nuspec",
         "lib/net461/Dapper.dll",
         "lib/net461/Dapper.xml",
         "lib/net5.0/Dapper.dll",
         "lib/net5.0/Dapper.xml",
         "lib/netstandard2.0/Dapper.dll",
-        "lib/netstandard2.0/Dapper.xml"
+        "lib/netstandard2.0/Dapper.xml",
+        "readme.md"
       ]
     },
     "Microsoft.NETCore.Platforms/3.1.0": {
@@ -497,28 +498,28 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Dapper >= 2.0.151",
-      "System.Data.SqlClient >= 4.8.5"
+      "dapper >= 2.1.4",
+      "system.data.sqlclient >= 4.8.5"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\47801169\\.nuget\\packages\\": {},
+    "C:\\Users\\47963426\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Z:\\PROGRAMACION\\TP9\\TP9.csproj",
+      "projectUniqueName": "Z:\\2023\\Programacion\\TP9\\TP9.csproj",
       "projectName": "TP9",
-      "projectPath": "Z:\\PROGRAMACION\\TP9\\TP9.csproj",
-      "packagesPath": "C:\\Users\\47801169\\.nuget\\packages\\",
-      "outputPath": "Z:\\PROGRAMACION\\TP9\\obj\\",
+      "projectPath": "Z:\\2023\\Programacion\\TP9\\TP9.csproj",
+      "packagesPath": "C:\\Users\\47963426\\.nuget\\packages\\",
+      "outputPath": "Z:\\2023\\Programacion\\TP9\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\47801169\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\47963426\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -545,11 +546,11 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
-          "Dapper": {
+          "dapper": {
             "target": "Package",
-            "version": "[2.0.151, )"
+            "version": "[2.1.4, )"
           },
-          "System.Data.SqlClient": {
+          "system.data.sqlclient": {
             "target": "Package",
             "version": "[4.8.5, )"
           }

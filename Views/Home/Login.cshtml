@@ -1,0 +1,11 @@
+<form class="form" action='@Url.Action("Index")' method="post" class="formulario">
+  <span class="input-span">
+  <label for="email" class="label">Email</label>
+  <input type="email" name="email" id="email"></span>
+  <span class="input-span">
+  <label for="password" class="label">Contraseña</label>
+  <input type="password" name="password" id="password"></span>
+  <span class="span"><a href="#">Olvidaste tu contraseña?</a></span>
+  <input class="submit" type="submit" value="Log in">
+  <span class="span">No tenes cuenta? <a href='@Url.Action("Registrarte")'>Crear cuenta</a></span>
+</form>
