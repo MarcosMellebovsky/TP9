@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\2023\\Programacion\\TP9\\TP9.csproj": {}
+    "Z:\\PROGRAMACION\\TP9\\TP9.csproj": {}
   },
   "projects": {
-    "Z:\\2023\\Programacion\\TP9\\TP9.csproj": {
+    "Z:\\PROGRAMACION\\TP9\\TP9.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\2023\\Programacion\\TP9\\TP9.csproj",
+        "projectUniqueName": "Z:\\PROGRAMACION\\TP9\\TP9.csproj",
         "projectName": "TP9",
-        "projectPath": "Z:\\2023\\Programacion\\TP9\\TP9.csproj",
-        "packagesPath": "C:\\Users\\47963426\\.nuget\\packages\\",
-        "outputPath": "Z:\\2023\\Programacion\\TP9\\obj\\",
+        "projectPath": "Z:\\PROGRAMACION\\TP9\\TP9.csproj",
+        "packagesPath": "C:\\Users\\47801169\\.nuget\\packages\\",
+        "outputPath": "Z:\\PROGRAMACION\\TP9\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\47963426\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\47801169\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

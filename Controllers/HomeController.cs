@@ -22,6 +22,18 @@ public class HomeController : Controller
     {
         return View();
     }
+    public IActionResult Registrarte( int IdUsuario)
+    {
+        ViewBag.IdUsuarioo = IdUsuario;
+        return View("Registro");
+    }
+    public IActionResult GuardarUsuario(Usuario us)
+    {
+        BD.Registro(us);
+        ViewBag.InfoUsuario = BD.VerInfoUsuario(us.IdUsuario);
+        ViewBag.ListaUsuario = BD.ListarUsuario(us.IdUsuario);
+        return View("Index");
+    }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
