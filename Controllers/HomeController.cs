@@ -22,7 +22,7 @@ public class HomeController : Controller
     {
         return View();
     }
-    public IActionResult Registrarte( int IdUsuario)
+    public IActionResult Registrarte(int IdUsuario)
     {
         ViewBag.IdUsuarioo = IdUsuario;
         return View("Registro");
