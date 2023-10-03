@@ -44,11 +44,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "Dapper": {
+            "dapper": {
               "target": "Package",
               "version": "[2.1.4, )"
             },
-            "System.Data.SqlClient": {
+            "system.data.sqlclient": {
               "target": "Package",
               "version": "[4.8.5, )"
             }
