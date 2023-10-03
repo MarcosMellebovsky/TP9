@@ -1,9 +1,37 @@
-<form action='@Url.Action("GuardarUsuario","Home")' method="post">
-    <input type="hidden" name="IdUsuario" value="@ViewBag.IdUsuarioo">
-    <input type="text" name="UserName" placeholder="UserName" required>
-    <input type="text" name="Nombre" placeholder="Nombre" required> 
-    <input type="text" name="Email" placeholder="Email" required> 
-    <input type="int" name="Telefono" placeholder="Telefono" required>
-    <input type="text" name="Contraseña" placeholder="Contraseña" required>
-    <button type="submit">Crear Usuario</button>
+
+
+
+<form class="form">
+    <p class="title">Register </p>
+    <p class="message">Signup now and get full access to our app. </p>
+        <div class="flex">
+        <label>
+            <input class="input" type="text" name="UserName"  required>
+            <span>UserName</span>
+        </label>
+
+        <label>
+            <input class="input" type="text" name="Nombre" required>
+            <span>Nombre</span>
+        </label>
+    </div>  
+            
+    <label>
+        <input class="input" type="text" name="Email"  required> 
+        <span>Email</span>
+    </label> 
+
+    <label>
+        <input class="input" type="int" name="Telefono"  required> 
+        <span>Telefono</span>
+    </label> 
+    
+        
+    <label>
+        <input class="input" type="password" name="Contraseña"  required>
+        <span>Contraseña</span>
+    </label>
+    
+    <button class="submit" href='@Url.Action("GuardarUsuario")'>Submit</button>
+    <p class="signin">Ya tenes una cuenta? <a href="#">Entrar</a> </p>
 </form>

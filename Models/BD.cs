@@ -5,10 +5,10 @@ public static class BD{
     
       public static void Registro(Usuario us)
     {
-        string SQL = "INSERT INTO Usuario(IdUsuario, UserName, Contraseña, Nombre, Telefono, Email) VALUES(@pIdUsuario, @pUserName, @pContraseña, @pNombre, @pTelefono, @pEmail)";
+        string SQL = "INSERT INTO Usuario(UserName, Contraseña, Nombre, Telefono, Email) VALUES( @pUserName, @pContraseña, @pNombre, @pTelefono, @pEmail)";
         using (SqlConnection db = new SqlConnection(connectionString))
         {
-           db.Execute(SQL, new{pIdUsuario = us.IdUsuario, pUserName = us.UserName, pContraseña = us.Contraseña, pNombre = us.Nombre, pTelefono = us.Telefono, pEmail = us.Email});
+           db.Execute(SQL, new{ pUserName = us.UserName, pContraseña = us.Contraseña, pNombre = us.Nombre, pTelefono = us.Telefono, pEmail = us.Email});
         }
 
        
