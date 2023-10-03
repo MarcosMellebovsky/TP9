@@ -13,5 +13,26 @@ public static class BD{
 
        
     }
+    public static Usuario VerInfoUsuario(int IdUsuario)
+    {
+        Usuario InfoUsuario = new Usuario();
+        string SQL = "SELECT * FROM Usuario WHERE IdUsuario = @idus";
+        using (SqlConnection db = new SqlConnection(connectionString))
+        {
+            InfoUsuario = db.QueryFirstOrDefault(SQL, new{idus = IdUsuario});
+        }
+        return InfoUsuario;
+    }
+      public static List<Usuario> ListarUsuario(int IdUsuario)
+    {
+        List<Usuario> ListarUsuario = new List<Usuario>();
+        string SQL = "SELECT * FROM Usuario WHERE IdUsuario = @idus";
+        using (SqlConnection db = new SqlConnection(connectionString))
+        {
+            ListarUsuario = db.Query<Usuario>(SQL, new{idus = IdUsuario}).ToList();
+        }
+        return ListarUsuario;
+    }
+
 
 }

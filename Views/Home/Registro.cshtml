@@ -1,0 +1,9 @@
+<form action='@Url.Action("GuardarUsuario","Home")' method="post">
+    <input type="hidden" name="IdUsuario" value="@ViewBag.IdUsuarioo">
+    <input type="text" name="UserName" placeholder="UserName" required>
+    <input type="text" name="Nombre" placeholder="Nombre" required> 
+    <input type="text" name="Email" placeholder="Email" required> 
+    <input type="int" name="Telefono" placeholder="Telefono" required>
+    <input type="text" name="Contraseña" placeholder="Contraseña" required>
+    <button type="submit">Crear Usuario</button>
+</form>
