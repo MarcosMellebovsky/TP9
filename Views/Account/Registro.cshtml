@@ -1,4 +1,4 @@
-<form class="formm"  action='@Url.Action("Login", "Account")' method="post">
+<form class="formm"  action='@Url.Action("Login", "Account")' onsubmit= "return validarContraseña()" method="post">
     <p class="titlee">Register </p>
         <div class="flexx">
         <label>
@@ -24,13 +24,16 @@
         <span>Telefono</span>
     </label> 
     <label>
-        <input class="inputt" type="password" name="Contraseña"  required>
+        <input class="inputt" type="password" name="Contraseña" id="contraseña"  required>
         <span>Contraseña</span>
     </label>
      <label>
-        <input class="inputt" type="password" name="Contraseña"  required>
+        <input class="inputt" type="password" name="Contraseña" id="contraseña2"  required>
         <span>Confirmar Contraseña</span>
     </label>
+    <p id="incorrecta1"></p>
+    <p id="incorrecta2"></p>
+    
     <button class="submitt" >Registrarme</button>
     <p class="signinn">Ya tenes una cuenta ? <a href='@Url.Action("Login", "Account")'>Entrar</a> </p>
 </form>

@@ -16,6 +16,8 @@ public class AccountController : Controller
 
     public IActionResult Login()
     {
+
+        
         return View("Login");
     }
 
@@ -29,7 +31,6 @@ public class AccountController : Controller
         BD.Registro(us);
         ViewBag.InfoUsuario = BD.VerInfoUsuario(us.IdUsuario);
         ViewBag.ListaUsuario = BD.ListarUsuario(us.IdUsuario);
-        
         return View("Index");
     }
    

@@ -23,7 +23,7 @@ body {
 
 
 form {
-  background-color: #1a1a1a;
+  background-color: rgb(0 0 0);
   padding: 1rem;
   border-radius: 20px;
 
@@ -113,7 +113,7 @@ form .submit:hover {
   padding: 20px;
   border-radius: 20px;
   position: relative;
-  background-color: rgb(63, 61, 61);
+  background-color: rgb(0 0 0);
 }
 
 .titlee {
@@ -179,7 +179,7 @@ form .submit:hover {
   width: 100%;
   padding: 10px 10px 20px 10px;
   outline: 0;
-  border: 1px solid rgba(105, 105, 105, 0.397);
+  border: 1px solid rgba(0, 0, 0, 0.397);
   border-radius: 10px;
 }
 
