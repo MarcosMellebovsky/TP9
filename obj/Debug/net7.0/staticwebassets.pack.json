@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "Z:\\2023\\Programacion\\TP9\\wwwroot\\img\\gif.gif",
+      "PackagePath": "staticwebassets\\img\\gif.gif"
+    },
+    {
       "Id": "Z:\\2023\\Programacion\\TP9\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
