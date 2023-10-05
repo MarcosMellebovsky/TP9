@@ -45,8 +45,9 @@ form {
   gap: .5rem;
 }
 
-form input[type="email"],
-form input[type="password"] {
+form input[type="text"],
+form input[type="password"], 
+form input[type="int"]{
   border-radius: 0.5rem;
   padding: 1rem 0.75rem;
   width: 100%;
@@ -58,8 +59,9 @@ form input[type="password"] {
   outline: 2px solid var(--bg-dark);
 }
 
-form input[type="email"]:focus,
-form input[type="password"]:focus {
+form input[type="text"]:focus,
+form input[type="password"]:focus,
+form input[type="int"]:focus {
   outline: 2px solid var(--clr);
 }
 
@@ -102,32 +104,43 @@ form .submit:hover {
 
 
 
-
 .formm {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  
+  justify-content: center;
   padding: 20px;
   border-radius: 20px;
   position: relative;
-  background-color: #1a1a1a;
-  color: #fff;
-  border: 1px solid #333;
+  background-color: rgb(63, 61, 61);
 }
 
 .titlee {
   font-size: 28px;
+  color: royalblue;
   font-weight: 600;
   letter-spacing: -1px;
   position: relative;
   display: flex;
+  align-items: center;
   padding-left: 30px;
-  color: #00bfff;
+}
+
+.titlee::before,.titlee::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: royalblue;
 }
 
 .titlee::before {
   width: 18px;
   height: 18px;
+  background-color: royalblue;
 }
 
 .titlee::after {
@@ -136,38 +149,25 @@ form .submit:hover {
   animation: pulse 1s linear infinite;
 }
 
-.titlee::before,
-.titlee::after {
-  position: absolute;
-  content: "";
-  height: 16px;
-  width: 16px;
-  border-radius: 50%;
-  left: 0px;
-  background-color: #00bfff;
-}
-
-.messagee, 
-.signinn {
-  font-size: 14.5px;
-  color: rgba(255, 255, 255, 0.7);
+.messagee, .signinn {
+  color: rgba(255, 255, 255, 0.822);
+  font-size: 14px;
 }
 
 .signinn {
   text-align: center;
 }
 
+.signinn a {
+  color: royalblue;
+}
+
 .signinn a:hover {
   text-decoration: underline royalblue;
 }
 
-.signinn a {
-  color: #00bfff;
-}
-
 .flexx {
   display: flex;
- 
   gap: 6px;
 }
 
@@ -176,55 +176,52 @@ form .submit:hover {
 }
 
 .formm label .inputt {
-  background-color: #333;
-  color: #fff;
   width: 100%;
-  padding: 20px 05px 05px 10px;
+  padding: 10px 10px 20px 10px;
   outline: 0;
   border: 1px solid rgba(105, 105, 105, 0.397);
   border-radius: 10px;
 }
 
 .formm label .inputt + span {
-  color: rgba(255, 255, 255, 0.5);
   position: absolute;
   left: 10px;
-  top: 0px;
+  top: 15px;
+  color: rgb(255, 255, 255);
   font-size: 0.9em;
   cursor: text;
   transition: 0.3s ease;
 }
 
 .formm label .inputt:placeholder-shown + span {
-  top: 12.5px;
+  top: 15px;
   font-size: 0.9em;
 }
 
-.formm label .inputt:focus + span,
-.formm label .inputt:valid + span {
-  color: #00bfff;
+.formm label .inputt:focus + span,.formm label .inputt:valid + span {
   top: 0px;
   font-size: 0.7em;
   font-weight: 600;
 }
 
-.inputt {
-  font-size: medium;
+.formm label .inputt:valid + span {
+  color: green;
 }
 
 .submitt {
   border: none;
   outline: none;
+  background-color: royalblue;
   padding: 10px;
   border-radius: 10px;
   color: #fff;
   font-size: 16px;
   transform: .3s ease;
-  background-color: #00bfff;
 }
 
 .submitt:hover {
-  background-color: #00bfff96;
+  background-color: rgb(56, 90, 194);
+  cursor: pointer;
 }
 
 @keyframes pulse {
@@ -255,14 +252,14 @@ form .submit:hover {
   outline: 2px solid #2c9caf;
 }
 
-button:hover {
+.button:hover {
   color: #ffffff;
   transform: scale(1.1);
   outline: 2px solid #126d61;
   box-shadow: 4px 5px 17px -4px #05584d;
 }
 
-button::before {
+.button::before {
   content: "";
   position: absolute;
   left: -50px;
@@ -275,7 +272,7 @@ button::before {
   transition: width 1000ms;
 }
 
-button:hover::before {
+.button:hover::before {
   width: 250%;
 }
 

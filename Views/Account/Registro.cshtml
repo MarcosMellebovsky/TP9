@@ -1,6 +1,5 @@
 <form class="formm"  action='@Url.Action("Login", "Account")' method="post">
     <p class="titlee">Register </p>
-    <p class="messagee">Signup now and get full access to our app. </p>
         <div class="flexx">
         <label>
             <input class="inputt" type="text" name="UserName"  required>
@@ -13,8 +12,10 @@
         </label>
     </div>  
             
+     
+            
      <label>
-        <input class="inputt" type="text" name="Email"  required> 
+        <input  class="inputt" type="text" name="Email"  required> 
         <span>Email</span>
     </label>
         
@@ -25,6 +26,10 @@
     <label>
         <input class="inputt" type="password" name="Contraseña"  required>
         <span>Contraseña</span>
+    </label>
+     <label>
+        <input class="inputt" type="password" name="Contraseña"  required>
+        <span>Confirmar Contraseña</span>
     </label>
     <button class="submitt" >Registrarme</button>
     <p class="signinn">Ya tenes una cuenta ? <a href='@Url.Action("Login", "Account")'>Entrar</a> </p>

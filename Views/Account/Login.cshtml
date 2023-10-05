@@ -1,10 +1,10 @@
 <form class="form" action='@Url.Action("GuardarUsuario", "Account")' method="post" class="formulario">
   <span class="input-span">
   <label for="UserName" class="label">UserName</label>
-  <input type="text" name="UserName" id="UserName"></span>
+  <input type="text" name="UserName" id="UserName" required></span>
   <span class="input-span">
   <label for="password" class="label">Contraseña</label>
-  <input type="password" name="Contraseña" id="password"></span>
+  <input type="password" name="Contraseña" id="password"required></span>
   <span class="span"><a href="#">Olvidaste tu contraseña?</a></span>
   <input class="submit" type="submit" value="Log in">
   <span class="span">No tenes cuenta? <a href='@Url.Action("Registrarte", "Account")'>Crear cuenta</a></span>
