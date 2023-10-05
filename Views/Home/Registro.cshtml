@@ -1,11 +1,4 @@
-
-    
-        
- 
-    
-
-
-<form class="formm">
+<form class="formm"  action='@Url.Action("Login", "Account")' method="post">
     <p class="titlee">Register </p>
     <p class="messagee">Signup now and get full access to our app. </p>
         <div class="flexx">
@@ -33,6 +26,6 @@
         <input class="inputt" type="password" name="Contraseña"  required>
         <span>Contraseña</span>
     </label>
-    <button class="submitt" href='@Url.Action("GuardarUsuario")'>Registrarme</button>
-    <p class="signinn">Ya tenes una cuenta ? <a href='@Url.Action("Index")'>Entrar</a> </p>
+    <button class="submitt" >Registrarme</button>
+    <p class="signinn">Ya tenes una cuenta ? <a href='@Url.Action("Login", "Account")'>Entrar</a> </p>
 </form>
