@@ -16,8 +16,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = Z:\2023\Programacion\TP9
 build_property._RazorSourceGeneratorDebug = 
 
+[Z:/2023/Programacion/TP9/Views/Account/Bienvenida.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxCaWVudmVuaWRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [Z:/2023/Programacion/TP9/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[Z:/2023/Programacion/TP9/Views/Account/RecuperarContraseña.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWN1cGVyYXJDb250cmFzZcOxYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [Z:/2023/Programacion/TP9/Views/Account/Registro.cshtml]

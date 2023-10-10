@@ -26,13 +26,49 @@ public class AccountController : Controller
         ViewBag.IdUsuarioo = IdUsuario;
         return View("Registro");
     }
-    public IActionResult GuardarUsuario(Usuario us)
+   public IActionResult IniciarSesion(string UserName, string Contraseña)
+{
+    Usuario usuario = BD.VerificarCredenciales(UserName, Contraseña);
+
+    if (usuario != null)
     {
-        BD.Registro(us);
-        ViewBag.InfoUsuario = BD.VerInfoUsuario(us.IdUsuario);
-        ViewBag.ListaUsuario = BD.ListarUsuario(us.IdUsuario);
-        return View("Index");
+        ViewBag.InfoUsuario = usuario;
+        return View("Bienvenida");
     }
+    else
+    {
+        ViewBag.Error = "Nombre de usuario o contraseña incorrectos.";
+        return View("Login");
+    }
+}
+
+public IActionResult OlvideMiContraseña()
+{
+    return View("RecuperarContraseña");
+}
+
+[HttpPost]
+public IActionResult RecuperarContraseña(string UserName)
+{
+    Usuario usuario = BD.ObtenerContraseñaPorUserName(UserName);
+
+    if (usuario != null)
+    {
+        ViewBag.ContraseñaRecuperada = usuario.Contraseña;
+    }
+    else
+    {
+        ViewBag.ErrorRecuperación = "Nombre de usuario no encontrado.";
+    }
+
+    return View("RecuperarContraseña");
+}
+
+
+
+
+
+
    
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

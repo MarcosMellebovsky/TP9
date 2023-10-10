@@ -33,6 +33,32 @@ public static class BD{
         }
         return ListarUsuario;
     }
+    public static Usuario VerificarCredenciales(string UserName, string Contraseña)
+{
+    string SQL = "SELECT * FROM Usuario WHERE UserName = @userName";
+    using (SqlConnection db = new SqlConnection(connectionString))
+    {
+        Usuario usuario = db.QueryFirstOrDefault<Usuario>(SQL, new { userName = UserName });
+
+        if (usuario != null && usuario.Contraseña == Contraseña)
+        {
+            return usuario; 
+        }
+        else
+        {
+            return null;
+        }
+    }
+}
+public static Usuario ObtenerContraseñaPorUserName(string UserName)
+{
+    string SQL = "SELECT * FROM Usuario WHERE UserName = @username";
+    using (SqlConnection db = new SqlConnection(connectionString))
+    {
+        return db.QueryFirstOrDefault<Usuario>(SQL, new { username = UserName });
+    }
+}
+
 
 
 }
