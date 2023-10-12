@@ -26,6 +26,11 @@ public class AccountController : Controller
         ViewBag.IdUsuarioo = IdUsuario;
         return View("Registro");
     }
+    public IActionResult GuardarUsuario(Usuario us)
+    {
+        BD.Registro(us);
+        return RedirectToAction("Login");
+    }
    public IActionResult IniciarSesion(string UserName, string Contraseña)
 {
     Usuario usuario = BD.VerificarCredenciales(UserName, Contraseña);
